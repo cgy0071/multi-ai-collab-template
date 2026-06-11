@@ -1,0 +1,21 @@
+# macOS / Windows noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# temporary collaboration outputs
+tmp/
+*.log
+
+# python
+__pycache__/
+*.pyc
+
+# local Codex / skill install artifacts
+.codex/
