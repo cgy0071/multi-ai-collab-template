@@ -41,6 +41,12 @@ Use:
 
 unless the user asks for something smaller.
 
+If the repository uses a light template layout, point the user to `README.md` for:
+
+- installation
+- handoff directory structure
+- task pack / result / review examples
+
 ## Task pack requirements
 
 Every task pack should contain:
@@ -55,6 +61,10 @@ Every task pack should contain:
 - stop conditions
 - one-line instruction for the collaborator
 
+You may embed the task pack directly in chat or save it under:
+
+- `ai_handoff/task_packs/`
+
 ## Review requirements
 
 Always check:
@@ -64,6 +74,8 @@ Always check:
 3. is the evidence sufficient
 4. can the result update the baseline
 5. is the line still worth continuing
+
+If collaborator output is missing scope, evidence, or validation, do not silently repair it into a formal conclusion. Mark it as partial or failed and request a narrower rerun.
 
 ## Baseline rule
 

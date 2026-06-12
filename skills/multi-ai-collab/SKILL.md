@@ -18,6 +18,12 @@ Use role-specific skills for stronger behavior separation:
 - `ai-project-manager`
 - `ai-collaborator`
 
+Repository packaging rule:
+
+- keep installation, directory layout, and copy-ready templates in `README.md`
+- keep role behavior, handoff rules, and promotion rules in `SKILL.md`
+- prefer a light repository shape instead of many scattered helper files
+
 ## Roles
 
 ### Lead AI / project manager
@@ -74,6 +80,24 @@ ai_handoff/
 6. Promote only reviewed, evidence-backed conclusions to the formal baseline.
 7. Decide whether to continue, narrow, pause, or close the line.
 
+## Installation and bootstrap
+
+When this template is copied into a new repository, recommend this minimum setup:
+
+```text
+project_root/
+  ai_handoff/
+    task_packs/
+    results/
+    reviews/
+  multi_ai_collab_template/
+```
+
+Default startup phrases:
+
+- lead AI: `你是主控`
+- collaborator AI: `你是协作者`
+
 ## Required artifacts
 
 Every usable collaboration setup should have:
@@ -84,6 +108,8 @@ Every usable collaboration setup should have:
 - a baseline update rule
 
 The repository root includes compact template files for those artifacts.
+
+When a repository has been simplified, it is acceptable for those templates to live in `README.md` instead of separate files.
 
 ## Baseline Promotion
 

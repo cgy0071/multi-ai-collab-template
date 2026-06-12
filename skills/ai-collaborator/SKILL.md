@@ -31,6 +31,8 @@ Confirm:
 - validation steps
 - stop conditions
 
+If the task pack is incomplete, return the missing items instead of widening the task yourself.
+
 ## While acting
 
 - execute only the requested line
@@ -54,6 +56,10 @@ Return:
 6. uncertainties
 7. suggested next step
 
+The result may be returned in chat or written under:
+
+- `ai_handoff/results/`
+
 ## Evidence rule
 
 Prefer:
@@ -65,3 +71,5 @@ Prefer:
 - test outputs
 
 Avoid vague claims without evidence.
+
+If the repository uses the light template layout, use the result example embedded in `README.md`.
